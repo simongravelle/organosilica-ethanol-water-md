@@ -1,0 +1,12 @@
+#include "ff/forcefield.itp"
+#include "ff/silica.itp"
+#include "ff/water.itp"
+#include "ff/ethanol.itp"
+
+[ System ]
+Water-ethanol mixture in organosilica
+
+[ Molecules ]
+Sil 1
+Eth 150
+Sol 2850

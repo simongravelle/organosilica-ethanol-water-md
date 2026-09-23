@@ -1,0 +1,40 @@
+integrator = md
+nsteps = 200000
+dt = 0.001
+comm_mode = linear
+comm_grps = system
+gen-vel = yes
+gen-temp = 300
+
+cutoff-scheme = Verlet
+nstlist = 10
+ns_type = grid
+
+nstlog = 20000
+nstenergy = 20000
+nstxout-compressed = 20000
+
+vdw-type = Cut-off
+rvdw = 1.4
+
+coulombtype = pme
+fourierspacing = 0.1
+pme-order = 4
+rcoulomb = 1.4
+
+constraint-algorithm = lincs
+constraints = hbonds
+continuation = no
+
+tcoupl = v-rescale
+ld-seed = 48456
+tc-grps = Sol Sil Eth
+tau-t = 0.1 0.1 0.1
+ref-t = 300 300 300
+nhchainlength = 1
+
+pcoupl = Berendsen
+Pcoupltype = anisotropic
+tau_p = 1.0
+ref_p = 1.0 1.0 1000.0 0 0 0
+compressibility = 4.5e-5 4.5e-5 4.5e-5 0 0 0

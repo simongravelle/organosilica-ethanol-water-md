@@ -1,0 +1,24 @@
+[ moleculetype ]
+; Name   nrexcl
+Sol     2
+
+[ atoms ]
+;  nr  type  resnr  resid  atom  cgnr  charge    mass
+1	OW	1	Sol	OW	1	0.0	15.999
+2	HW	1	Sol	HW	2	0.527 	1.00784
+3	HW	1	Sol	HW	3	0.527 	1.00784
+4	MW	1	Sol	MW	4	-1.054	0.000
+
+[ settles ]
+; i funct doh dhh
+1 1 0.09572 0.15139
+
+[ virtual_sites3 ]
+; Vsite from          funct        a               b
+4     1     2     3     1       0.089608       0.089608
+
+[ exclusions ]
+1 2 3 4
+2 1 3 4
+3 1 2 4
+4 1 2 3
