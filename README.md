@@ -17,7 +17,7 @@ surface groups, $r_{C/O}$).
 ## GROMACS input files
 
 Input files for each surface type (Q2, Q3, Q4, Q2/Q3, Q3/Q4, amorphous, and
-liquid-vapor) are provided under `simulations/`. For each folder, force field
+liquid-vapor) are provided under `data/`. For each folder, force field
 parameters are provided in the `ff/` subfolder, and inputs are provided in the
 `inputs/` subfolder. The topology corresponds to the `conf.gro` file. Inputs
 are compatible with GROMACS version 2025.3.
@@ -29,9 +29,11 @@ gmx mdrun -deffnm prod -v -rdd 1 -nt 8 -pin on
 
 ## LAMMPS input files
 
-Input files for the [graphite](graphite) slit pores are provided and should
-be run as follows. These inputs are compatible with LAMMPS version 2Aug2023.
+Input files for the graphite slit pores are provided in `data/graphite/` and should
+be run as follows.
 
 ```
 lmp -in input.lmp
 ```
+
+These inputs are compatible with LAMMPS version 2Aug2023.
