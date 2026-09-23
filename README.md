@@ -1,4 +1,4 @@
-# Molecular Dynamics Simulations and Analysis Scripts for the Study of Water-Ethanol Mixture Adsorption Selectivity at Organosilica Surfaces
+# Molecular Dynamics Simulations Scripts for the Study of Water-Ethanol Mixture Adsorption Selectivity at Organosilica Surfaces
 
 This repository accompanies the manuscript:
 
